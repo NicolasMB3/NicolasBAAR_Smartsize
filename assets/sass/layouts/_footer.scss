@@ -1,0 +1,43 @@
+@use '../utils' as *;
+
+#footer {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
+   height: 10rem;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   padding: 0 2rem 2rem 2rem;
+
+   .footer--button__next {
+      @include footer-button__next($blue, $white);
+   }
+}
+
+#footer--morphologie {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
+   height: 10rem;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   padding: 0 2rem 2rem 2rem;
+
+   .footer--button__next {
+      @include footer-button__next($blue, $white);
+   }
+
+   .footer--button__prev {
+      @include footer-button__prev($white, $blue, $lite-grey);
+   }
+}

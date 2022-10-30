@@ -1,0 +1,88 @@
+@use '../utils' as *;
+
+.velo--container {
+   .vtmn-select_container {
+      width: 100%;
+   }
+
+   label {
+      font-style: italic;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $dark;
+   }
+}
+
+.card--container {
+   margin-top: 1.5rem;
+   margin-bottom: 4rem;
+
+   .card--desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h4 {
+         font-style: italic;
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 24px;
+         text-transform: uppercase;
+         color: $dark;
+         width: auto;
+      }
+
+      a {
+         display: flex;
+
+         img {
+            margin-right: 0.3rem;
+         }
+
+         p {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #007DBC;
+         }
+      }
+   }
+
+   .card {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      background-color: $white;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border-radius: 4px;
+      border: 1px solid $grey;
+
+      &:hover {
+         -webkit-box-shadow: 0px 0px 0px 4px #E7F3F9;
+         box-shadow: 0px 0px 0px 4px #E7F3F9;
+      }
+
+      h4 {
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 20px;
+         color: $dark;
+         margin-bottom: 0.3rem;
+      }
+
+      p {
+         width: 90%;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 20px;
+         color: $grey;
+      }
+
+      img {
+         margin-right: 1rem;
+      }
+   }
+}

@@ -1,0 +1,126 @@
+@mixin navigation-circles($color, $bg) {
+   // Font parameters
+   font-weight: 700;
+   font-size: 16px;
+   color: $color;
+   line-height: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   // Border parameters
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 99px;
+   border: 2px solid $color;
+   background-color: $bg;
+   width: 32px;
+   height: 32px;
+}
+
+@mixin navigation-circles__validate($color, $bg) {
+   // Font parameters
+   font-weight: 700;
+   font-size: 16px;
+   color: $color;
+   line-height: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   // Border parameters
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 99px;
+   background-color: $bg;
+   width: 32px;
+   height: 32px;
+}
+
+@mixin navigation-text($color) {
+   // Font parameters
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   margin-top: 1rem;
+   color: $color;
+}
+
+@mixin footer-button__next($blue, $white) {
+   background-color: $blue;
+   color: $white;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 16px;
+   text-decoration: none;
+   padding: 16px 30px;
+   border-radius: 4px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+
+   span {
+      margin-left: 0.5rem;
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-image: url('/assets/images/arrow-white.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: rotate(0deg);
+   }
+
+   &:hover {
+      background-color: $blue;
+   }
+}
+
+@mixin footer-button__prev($blue, $white, $grey) {
+   background-color: $blue;
+   color: $white;
+   border: 2px solid $grey;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 16px;
+   text-decoration: none;
+   padding: 14px 30px;
+   border-radius: 4px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+
+   span {
+      margin-right: 0.5rem;
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-image: url('/assets/images/arrow-blue.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: rotate(180deg);
+   }
+
+   &:hover {
+      background-color: $blue;
+   }
+}
+
+@mixin form-cercles__left($size, $positionX, $positionY, $circle) {
+   width: $size;
+   height: $size;
+   position: absolute;
+   left: $positionX;
+   top: $positionY;
+   border: 1px solid $circle;
+   border-radius: 9999px;
+   opacity: 0.3;
+}
+
+@mixin form-cercles__right($size, $positionX, $positionY, $circle) {
+   width: $size;
+   height: $size;
+   position: absolute;
+   right: $positionX;
+   top: $positionY;
+   border: 1px solid $circle;
+   border-radius: 9999px;
+   opacity: 0.3;
+}

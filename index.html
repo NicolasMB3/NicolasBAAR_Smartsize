@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Decathlon - Smartsize</title>
+   <!-- Roboto font via Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <!-- Vitamin setup : https://github.com/Decathlon/vitamin-web -->
+   <link rel="stylesheet" href="node_modules/@vtmn/css/dist/index.css">
+</head>
+
+<body>
+   <main>
+      <!-- Left part : Forms and inputs -->
+      <section id="section--form">
+         <!-- Navigation menu -->
+         <div id="navigation">
+            <img src="assets/images/logo-decalthlon.svg" alt="Logo Decathlon" id="logo--navigation__width">
+            <div id="navigation--content">
+               <!-- 1 -->
+               <div class="navigation--box line">
+                  <p class="navigation--box__circle"><i class="fa-solid fa-check"></i><span class="text__hide">1</span>
+                  </p>
+                  <p class="navigation--box__text">Profil</p>
+               </div>
+               <!-- 2 -->
+               <div class="navigation--box line">
+                  <p class="navigation--box__circle">2</p>
+                  <p class="navigation--box__text">Morpho</p>
+               </div>
+               <!-- 3 -->
+               <div class="navigation--box line">
+                  <p class="navigation--box__circle">3</p>
+                  <p class="navigation--box__text">Pratique</p>
+               </div>
+               <!-- 4 -->
+               <div class="navigation--box line">
+                  <p class="navigation--box__circle">4</p>
+                  <p class="navigation--box__text">Récap</p>
+               </div>
+               <!-- 5 -->
+               <div class="navigation--box">
+                  <p class="navigation--box__circle">5</p>
+                  <p class="navigation--box__text">Résultat</p>
+               </div>
+            </div>
+         </div>
+         <div id="form">
+            <h1>Profil</h1>
+            <h2>Êtes-vous une femme ou un homme ?</h2>
+            <p class="form--desc">La configuration personnalisée peut varier en fonction de votre sexe</p>
+            <form id="form--select" action="#">
+               <input class="vtmn-radio-button" type="radio" id="women" name="foo">
+               <label for="women">Une femme</label>
+               <input class="vtmn-radio-button" type="radio" id="men" name="foo">
+               <label for="men">Un homme</label>
+            </form>
+            <div id="form--circles__1"></div>
+            <div id="form--circles__2"></div>
+            <div id="form--circles__3"></div>
+            <div id="form--circles__4"></div>
+         </div>
+         <div id="footer">
+            <a class="footer--button__next" href="morphologie.html">Continuer<span></span></a>
+         </div>
+      </section>
+      <!-- Right part : Image (only on large devices) -->
+      <section id="section--image"></section>
+   </main>
+   <!-- Fontawesome setup : https://fontawesome.com/ -->
+   <script src="https://kit.fontawesome.com/83ce2736b9.js" crossorigin="anonymous"></script>
+   <script src="/assets/scripts/index.js"></script>
+</body>
+
+</html>

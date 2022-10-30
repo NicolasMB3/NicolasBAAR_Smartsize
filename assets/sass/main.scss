@@ -1,0 +1,209 @@
+@use 'utils' as *;
+@use 'layouts/identification';
+@use 'layouts/morphologie';
+@use 'layouts/pratique';
+@use 'layouts/resume';
+@use 'layouts/navigation';
+@use 'layouts/footer';
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+   // First page : Accueil
+   main {
+      display: flex;
+      align-content: center;
+      justify-content: space-around;
+      min-height: 100vh;
+   }
+
+   #navigation {
+      #logo--navigation__width {
+         width: 200px;
+         height: 50px;
+      }
+
+      #navigation--content {
+         margin-top: 4rem;
+      }
+   }
+
+   #section--form {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      padding: 2rem 8rem;
+
+      #form {
+         height: 60vh;
+         padding: 3rem 2rem;
+
+         h1 {
+            margin-bottom: 1.8rem;
+         }
+
+         h2 {
+            font-size: 20px;
+         }
+      }
+
+      #form--circles__1 {
+         @include form-cercles__left(40rem, -36rem, 25rem, $circles)
+      }
+
+      #form--circles__2 {
+         @include form-cercles__left(40rem, -32rem, 35rem, $circles)
+      }
+
+      #form--circles__3 {
+         @include form-cercles__right(40rem, -30rem, 32rem, $circles)
+      }
+
+      #form--circles__4 {
+         @include form-cercles__right(40rem, -30rem, 40rem, $circles)
+      }
+   }
+
+   .morphologie--form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+   }
+
+   #footer {
+      background: linear-gradient(180deg, #ffffff00 -2.25%, #ffffff00 66.48%);
+      width: 100%;
+      height: auto;
+      position: relative;
+   }
+
+   #footer--morphologie {
+      background: linear-gradient(180deg, #ffffff00 -2.25%, #ffffff00 66.48%);
+      width: 100%;
+      height: auto;
+      position: relative;
+   }
+
+   // Home page : Index
+   #section--image {
+      display: block;
+      width: 55%;
+      height: auto;
+      z-index: 5;
+      background-image: url("/assets/images/image.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   // First page : Morphologie
+   #section--image--morphologie {
+      display: block;
+      width: 55%;
+      height: auto;
+      z-index: 5;
+      background-image: url("/assets/images/morphologie.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   // Second page : Pratique
+   #section--image--pratique {
+      display: block;
+      width: 55%;
+      height: auto;
+      z-index: 5;
+      background-image: url("/assets/images/pratique.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   // Last page : Resume
+   #section--image--resume {
+      display: block;
+      width: 55%;
+      height: auto;
+      z-index: 5;
+      background-image: url("/assets/images/resume.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   // Resultat image
+   #section--image--resultat {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -9999;
+      background-image: url("/assets/images/resultat.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   #section--modal {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(26, 26, 26, 0.5);
+
+      .modal--menu {
+         width: 45rem;
+         padding: 2rem;
+         border-radius: 12px;
+         position: relative;
+
+         .modal--context {
+            flex-direction: row;
+
+            img {
+               margin-right: 1.625rem;
+            }
+         }
+
+         .block {
+            height: auto;
+            position: relative;
+            padding: 0;
+         }
+      }
+   }
+
+   .velo--container {
+      .vtmn-select_container {
+         width: 30%;
+      }
+   }
+
+   .card--container {
+      width: 28rem;
+   }
+
+   .resume--block {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      column-gap: 2rem;
+
+      .resume--desc {
+         padding: 1.5rem 0;
+      }
+
+      hr:nth-of-type(3) {
+         visibility: hidden;
+      }
+
+      #first--section,
+      #second--section {
+         width: 100%;
+      }
+   }
+}

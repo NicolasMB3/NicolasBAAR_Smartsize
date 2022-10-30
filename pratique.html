@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Decathlon - Smartsize</title>
+   <!-- Roboto font via Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <!-- Vitamin setup : https://github.com/Decathlon/vitamin-web -->
+   <link rel="stylesheet" href="node_modules/@vtmn/css/dist/index.css">
+</head>
+
+<body>
+   <main>
+      <!-- Left part : Forms and inputs -->
+      <section id="section--form">
+         <!-- Navigation menu -->
+         <div id="navigation">
+            <img src="assets/images/logo-decalthlon.svg" alt="Logo Decathlon" id="logo--navigation__width">
+            <div id="navigation--content">
+               <!-- 1 -->
+               <!-- line-valid : Display validate check icon and blue background -->
+               <div class="navigation--box line-valid">
+                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
+                        class="text__hide">1</span>
+                  </p>
+                  <p class="navigation--box__text">Profil</p>
+               </div>
+               <!-- 2 -->
+               <div class="navigation--box line-valid">
+                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
+                        class="text__hide">2</span>
+                  </p>
+                  <p class="navigation--box__text">Morpho</p>
+               </div>
+               <!-- 3 -->
+               <div class="navigation--box line">
+                  <p class="navigation--box__circle">3</p>
+                  <p class="navigation--box__text">Pratique</p>
+               </div>
+               <!-- 4 -->
+               <div class="navigation--box line">
+                  <p class="navigation--box__circle">4</p>
+                  <p class="navigation--box__text">Récap</p>
+               </div>
+               <!-- 5 -->
+               <div class="navigation--box">
+                  <p class="navigation--box__circle">5</p>
+                  <p class="navigation--box__text">Résultat</p>
+               </div>
+            </div>
+         </div>
+         <div id="form">
+            <h1>Pratique</h1>
+            <h2>Choisissez votre type de vélo</h2>
+            <p class="form--desc">Choisissez le type de votre vélo ainsi que votre position la plus fréquente.</p>
+            <div class="block velo--container">
+               <div class="vtmn-select_container">
+                  <label for="velo">Type de vélo</label>
+                  <select name="velo" id="velo" autocomplete="on">
+                     <option value="chemin" selected>Vélo Tout Chemin</option>
+                     <option value="terrain">Vélo Tout Terrain</option>
+                     <option value="gravel">Vélo Gravel</option>
+                     <option value="route">Vélo Route</option>
+                  </select>
+               </div>
+            </div>
+            <!-- Cards informations -->
+            <div class="card--container">
+               <div class="card--desc">
+                  <h4>Votre utilisation</h4>
+                  <a href="#">
+                     <img src=" /assets/images/icon-information.svg" alt="Icône modale">
+                     <p>En savoir plus</p>
+                  </a>
+               </div>
+               <div class="card">
+                  <img src="/assets/images/card-image.svg" alt="Image de présentation 90°">
+                  <div>
+                     <h4>Confort</h4>
+                     <p>Consectetur nullam nunc nibh quis vitae diam</p>
+                  </div>
+               </div>
+            </div>
+            <div id="form--circles__1"></div>
+            <div id="form--circles__2"></div>
+            <div id="form--circles__3"></div>
+            <div id="form--circles__4"></div>
+         </div>
+         <div id="footer--morphologie">
+            <a class="footer--button__prev" href="morphologie.html"><span></span>Retour</a>
+            <a class="footer--button__next" href="#">Continuer<span></span></a>
+         </div>
+      </section>
+      <!-- Right part : Image (only on large devices) -->
+      <section id="section--image--pratique"></section>
+      <!-- Modal -->
+      <section id="section--modal">
+         <div class="modal--container">
+            <div class="modal--menu">
+               <i class="fa-solid fa-xmark fa-xl"></i>
+               <h3>Comment mesurer ?</h3>
+               <div class="modal--context">
+                  <img src="/assets/images/image-modal.svg" alt="Image d'exemple pour la modal">
+                  <div class="modale--content">
+                     <h4>Entrejambe</h4>
+                     <p><i class="fa-solid fa-ruler"></i><span class="text__underline">Matériel nécessaire :</span> un
+                        mètre-ruban, une équerre
+                        (ou objet
+                        avec angle droit), un crayon et votre tenue de cycliste.</p>
+                     <p>Mettez-vous debout, pieds nus et adossé au mur. Vos pieds sont légèrement écartes (environ 15 à
+                        20 cm max.) et vos talons touchent le mur. <br>
+                        Regardez droit devant vous, ensuite, prenez une équerre ou tout autre objet possédant un angle
+                        droit (ex: un livre) contre le mur et faites le glisser entre vos jambes jusqu’à votre périné.
+                        <br>
+                        Mesurer la distance entre l’angle droit et le sol
+                     </p>
+                  </div>
+               </div>
+               <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap"
+                  style="display: flex; flex-direction: row; align-items: center">
+                  <button class="vtmn-btn vtmn-btn_size--stretched">OK, j'ai compris</button>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!-- Fontawesome setup : https://fontawesome.com/ -->
+   <script src="https://kit.fontawesome.com/83ce2736b9.js" crossorigin="anonymous" defer></script>
+   <script src="/assets/scripts/index.js" defer></script>
+</body>
+
+</html>

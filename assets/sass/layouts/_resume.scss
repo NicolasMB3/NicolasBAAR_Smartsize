@@ -1,0 +1,36 @@
+@use '../utils' as *;
+
+.resume--block {
+   background: $white;
+   box-shadow: 0px 0px 12px rgba(0, 83, 125, 0.12);
+   border-radius: 8px;
+   padding: 0.5rem 1.5rem;
+   margin-bottom: 5rem;
+
+   hr {
+      border: 1px solid #EFF1F3;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .resume--desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+
+      p:first-child {
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 24px;
+         color: $dark;
+      }
+
+      p:nth-child(2) {
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 24px;
+         color: $blue;
+      }
+   }
+}

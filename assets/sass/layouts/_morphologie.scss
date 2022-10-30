@@ -1,0 +1,146 @@
+@use '../utils' as *;
+
+.morphologie--form {
+   display: grid;
+   grid-template-columns: 1fr;
+   position: relative;
+   padding-bottom: 4rem;
+
+   .morphologie--content {
+      display: flex;
+      position: relative;
+      margin-bottom: 2rem;
+
+      .morphologie--content__modifier {
+         margin-right: 0.5rem;
+         width: 100%;
+
+         .vtmn-text-input_container {
+            width: 100%;
+
+            input {
+               width: 100%;
+            }
+         }
+
+         label {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: $dark;
+         }
+      }
+
+      .label {
+         width: 100%;
+
+         label {
+            visibility: hidden;
+         }
+      }
+
+      a {
+         position: absolute;
+         right: 0;
+         display: flex;
+
+         img {
+            margin-right: 0.3rem;
+         }
+
+         p {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #007DBC;
+         }
+      }
+   }
+}
+
+#section--modal {
+   width: auto;
+   height: auto;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+
+   .modal--menu {
+      width: auto;
+      background-color: $white;
+      padding: 2rem 2rem 8rem 2rem;
+
+      .block {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 10rem;
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0) -60.25%, #FFFFFF 90.48%);
+         padding: 0 2rem 2rem 2rem;
+         align-content: flex-end;
+      }
+
+      .fa-xmark {
+         position: absolute;
+         right: 40px;
+         top: 48px;
+         color: #00689D;
+         cursor: pointer;
+      }
+
+      :last-child {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 24px;
+      }
+
+      p {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 24px;
+         color: $grey;
+         margin-bottom: 0.5rem;
+      }
+
+      h3 {
+         width: 80%;
+         font-style: italic;
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 28px;
+         text-transform: uppercase;
+         color: $dark;
+         margin-bottom: 2rem;
+      }
+
+      h4 {
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 28px;
+         color: $dark-grey;
+         margin-bottom: 0.4rem;
+      }
+
+      .modal--context {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 2rem;
+
+         img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 24px;
+            margin-bottom: 1.625rem;
+         }
+      }
+   }
+}
