@@ -1,0 +1,48 @@
+@use '../utils' as *;
+
+.resultat--block {
+   margin-top: 1.5rem;
+   padding-bottom: 8rem;
+
+   .block {
+      margin-bottom: 1.5rem;
+   }
+
+   .vtmn-card {
+      border: 2px solid $blue;
+
+      .vtmn-card_content {
+
+         .card--content_flex {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+         }
+
+         a {
+            display: flex;
+            margin-top: 0;
+
+            p {
+               @include paragraph(14px, $blue, 400)
+            }
+
+            img {
+               margin-right: 0.5rem;
+               width: 16px;
+            }
+         }
+
+         p {
+            @include paragraph(18px, $blue, 400);
+            margin-top: 0;
+         }
+      }
+
+      img {
+         aspect-ratio: 0;
+      }
+   }
+}

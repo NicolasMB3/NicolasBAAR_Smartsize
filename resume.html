@@ -14,6 +14,8 @@
    <link rel="stylesheet" href="assets/css/main.css">
    <!-- Vitamin setup : https://github.com/Decathlon/vitamin-web -->
    <link rel="stylesheet" href="node_modules/@vtmn/css/dist/index.css">
+   <!-- Google icons setup : https://fonts.google.com/icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -27,29 +29,32 @@
                <!-- 1 -->
                <!-- line-valid : Display validate check icon and blue background -->
                <div class="navigation--box line-valid">
-                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
-                        class="text__hide">1</span>
+                  <p class="navigation--box-v__circle">
+                     <i class="material-icons">done</i>
+                     <span class="text__hide">1</span>
                   </p>
                   <p class="navigation--box__text">Profil</p>
                </div>
                <!-- 2 -->
                <div class="navigation--box line-valid">
-                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
-                        class="text__hide">2</span>
+                  <p class="navigation--box-v__circle">
+                     <i class="material-icons">done</i>
+                     <span class="text__hide">2</span>
                   </p>
-                  <p class="navigation--box__text">Morpho</p>
+                  <p class="navigation--box__text">Morpho<span class="display-none">logie</span></p>
                </div>
                <!-- 3 -->
                <div class="navigation--box line-valid">
-                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
-                        class="text__hide">3</span>
+                  <p class="navigation--box-v__circle">
+                     <i class="material-icons">done</i>
+                     <span class="text__hide">3</span>
                   </p>
                   <p class="navigation--box__text">Pratique</p>
                </div>
                <!-- 4 -->
                <div class="navigation--box line">
                   <p class="navigation--box__circle">4</p>
-                  <p class="navigation--box__text">Récap</p>
+                  <p class="navigation--box__text">Récap<span class="display-none">itulatif</span></p>
                </div>
                <!-- 5 -->
                <div class="navigation--box">
@@ -104,8 +109,9 @@
             <div id="form--circles__4"></div>
          </div>
          <div id="footer--morphologie">
-            <a class="footer--button__prev" href="morphologie.html"><span></span>Retour</a>
-            <a class="footer--button__next" href="#">Continuer<span></span></a>
+            <a class="footer--button__prev" href="pratique.html"><i class="material-icons">chevron_left</i>Retour</a>
+            <a class="footer--button__next" href="resultat.html">Continuer<i
+                  class="material-icons">chevron_right</i></a>
          </div>
       </section>
       <!-- Right part : Image (only on large devices) -->
@@ -141,8 +147,6 @@
          </div>
       </section>
    </main>
-   <!-- Fontawesome setup : https://fontawesome.com/ -->
-   <script src="https://kit.fontawesome.com/83ce2736b9.js" crossorigin="anonymous" defer></script>
    <script src="/assets/scripts/index.js" defer></script>
 </body>
 

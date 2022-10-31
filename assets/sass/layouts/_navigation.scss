@@ -6,10 +6,6 @@ body {
    font-style: normal;
 }
 
-.fa-solid {
-   margin-right: 0.5rem;
-}
-
 .text__underline {
    text-decoration-line: underline;
 }
@@ -20,6 +16,26 @@ body {
 
 #section--image {
    display: none;
+}
+
+.display-none {
+   display: none;
+}
+
+.material-symbols-outlined {
+   font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' -25,
+      'opsz' 48
+}
+
+.material-symbols-outlined {
+   font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 200,
+      'opsz' 48
 }
 
 #navigation {
@@ -77,7 +93,7 @@ body {
          width: 100%;
          position: relative;
 
-         .fa-check {
+         .material-symbols-outlined {
             margin-right: 0;
             display: none;
          }
@@ -85,7 +101,91 @@ body {
          .navigation--box-v__circle {
             @include navigation-circles__validate($white, $blue);
 
-            .fa-check {
+            .material-symbols-outlined {
+               margin-right: 0;
+               display: block;
+            }
+
+            .text__hide {
+               display: none;
+            }
+         }
+
+         .navigation--box__circle {
+            @include navigation-circles($blue, $white);
+         }
+
+         .navigation--box__text {
+            @include navigation-text($grey)
+         }
+      }
+   }
+}
+
+#navigation-resultat {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: center;
+   overflow: auto;
+   flex-direction: column;
+   text-align: center;
+
+   #logo--navigation__width {
+      width: 160px;
+      height: 40px;
+   }
+
+   #navigation--content {
+      display: flex;
+      width: 100%;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 2.4rem;
+      position: relative;
+
+      .line:before {
+         content: "";
+         width: 100%;
+         height: 2px;
+         display: block;
+         position: absolute;
+         background-color: #D9DDE1;
+         top: 15px;
+         left: 0;
+         transform: translateX(45%);
+         z-index: -1;
+      }
+
+      .line-valid:before {
+         content: "";
+         width: 100%;
+         height: 2px;
+         display: block;
+         position: absolute;
+         background-color: $blue;
+         top: 15px;
+         left: 0;
+         transform: translateX(45%);
+         z-index: -1;
+      }
+
+      .navigation--box {
+         width: 100%;
+         position: relative;
+
+         .material-symbols-outlined {
+            margin-right: 0;
+            display: none;
+         }
+
+         .navigation--box-v__circle {
+            @include navigation-circles__validate($white, $blue);
+
+            .material-symbols-outlined {
                margin-right: 0;
                display: block;
             }

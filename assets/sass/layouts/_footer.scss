@@ -21,7 +21,7 @@
 
 #footer--morphologie {
    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
-   height: 10rem;
+   height: 8rem;
    position: fixed;
    bottom: 0;
    left: 0;
@@ -35,6 +35,36 @@
 
    .footer--button__next {
       @include footer-button__next($blue, $white);
+   }
+
+   .footer--button__prev {
+      @include footer-button__prev($white, $blue, $lite-grey);
+   }
+}
+
+#footer--resultat {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
+   height: 8rem;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex-direction: column;
+   padding: 0 2rem 2rem 2rem;
+
+   a {
+      color: $grey;
+   }
+
+   .material-symbols-outlined {
+      margin-right: 0.5rem
+   }
+
+   .footer--button__how {
+      @include footer--button__how($blue, $white, 100%);
    }
 
    .footer--button__prev {

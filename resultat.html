@@ -14,6 +14,10 @@
    <link rel="stylesheet" href="assets/css/main.css">
    <!-- Vitamin setup : https://github.com/Decathlon/vitamin-web -->
    <link rel="stylesheet" href="node_modules/@vtmn/css/dist/index.css">
+   <!-- Google icons setup : https://fonts.google.com/icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -21,37 +25,41 @@
       <!-- Left part : Forms and inputs -->
       <section id="section--form">
          <!-- Navigation menu -->
-         <div id="navigation">
+         <div id="navigation-resultat">
             <img src="assets/images/logo-decalthlon.svg" alt="Logo Decathlon" id="logo--navigation__width">
             <div id="navigation--content">
                <!-- 1 -->
                <!-- line-valid : Display validate check icon and blue background -->
                <div class="navigation--box line-valid">
-                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
-                        class="text__hide">1</span>
+                  <p class="navigation--box-v__circle">
+                     <i class="material-icons">done</i>
+                     <span class="text__hide">1</span>
                   </p>
                   <p class="navigation--box__text">Profil</p>
                </div>
                <!-- 2 -->
                <div class="navigation--box line-valid">
-                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
-                        class="text__hide">2</span>
+                  <p class="navigation--box-v__circle">
+                     <i class="material-icons">done</i>
+                     <span class="text__hide">2</span>
                   </p>
-                  <p class="navigation--box__text">Morpho</p>
+                  <p class="navigation--box__text">Morpho<span class="display-none">logie</span></p>
                </div>
                <!-- 3 -->
                <div class="navigation--box line-valid">
-                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
-                        class="text__hide">3</span>
+                  <p class="navigation--box-v__circle">
+                     <i class="material-icons">done</i>
+                     <span class="text__hide">3</span>
                   </p>
                   <p class="navigation--box__text">Pratique</p>
                </div>
                <!-- 4 -->
                <div class="navigation--box line-valid">
-                  <p class="navigation--box-v__circle"><i class="fa-solid fa-check"></i><span
-                        class="text__hide">4</span>
+                  <p class="navigation--box-v__circle">
+                     <i class="material-icons">done</i>
+                     <span class="text__hide">4</span>
                   </p>
-                  <p class="navigation--box__text">Récap</p>
+                  <p class="navigation--box__text">Récap<span class="display-none">itulatif</span></p>
                </div>
                <!-- 5 -->
                <div class="navigation--box">
@@ -60,56 +68,95 @@
                </div>
             </div>
          </div>
-         <div id="form">
+         <div id="form" style="text-align: center; height: 55vh; padding: 1rem 2rem 1rem 2rem;">
             <h1>Résultat</h1>
             <h2>Retrouvez ci-dessous votre configuration 100% personnalisée !</h2>
             <div class="resultat--block">
+               <!-- Card : Hauteur de selle -->
+               <div class="block">
+                  <div class="vtmn-card">
+                     <div class="vtmn-card_image">
+                        <img src="/assets/images/hauteur-selle.svg" alt="Hauteur de selle">
+                     </div>
+                     <div class="vtmn-card_content">
+                        <div class="card--content_flex">
+                           <h2 class="vtmn-card_content--title">Hauteur de selle</h2>
+                           <p>72 cm</p>
+                        </div>
+                        <a href="#">
+                           <img src=" /assets/images/icon-information.svg" alt="Icône modale">
+                           <p>En savoir plus</p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card : Recul de selle -->
+               <div class="block">
+                  <div class="vtmn-card">
+                     <div class="vtmn-card_image">
+                        <img src="/assets/images/recul-selle.svg" alt="Recul de selle">
+                     </div>
+                     <div class="vtmn-card_content">
+                        <div class="card--content_flex">
+                           <h2 class="vtmn-card_content--title">Recul de selle</h2>
+                           <p>8 cm</p>
+                        </div>
+                        <a href="#">
+                           <img src=" /assets/images/icon-information.svg" alt="Icône modale">
+                           <p>En savoir plus</p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card : Drop -->
+               <div class="block">
+                  <div class="vtmn-card">
+                     <div class="vtmn-card_image">
+                        <img src="/assets/images/drop.svg" alt="Drop">
+                     </div>
+                     <div class="vtmn-card_content">
+                        <div class="card--content_flex">
+                           <h2 class="vtmn-card_content--title">Drop</h2>
+                           <p>6 cm</p>
+                        </div>
+                        <a href="#">
+                           <img src=" /assets/images/icon-information.svg" alt="Icône modale">
+                           <p>En savoir plus</p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card : Selle et Guidon -->
+               <div class="block">
+                  <div class="vtmn-card">
+                     <div class="vtmn-card_image">
+                        <img src="/assets/images/selle-guidon.svg" alt="Selle / Guidon">
+                     </div>
+                     <div class="vtmn-card_content">
+                        <div class="card--content_flex">
+                           <h2 class="vtmn-card_content--title">Selle - Guidon</h2>
+                           <p>54 cm</p>
+                        </div>
+                        <a href="#">
+                           <img src=" /assets/images/icon-information.svg" alt="Icône modale">
+                           <p>En savoir plus</p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div id="form--circles__1"></div>
-            <div id="form--circles__2"></div>
-            <div id="form--circles__3"></div>
-            <div id="form--circles__4"></div>
          </div>
-         <div id="footer--morphologie">
-            <a class="footer--button__prev" href="morphologie.html"><span></span>Retour</a>
-            <a class="footer--button__next" href="#">Continuer<span></span></a>
+         <div id="footer--resultat">
+            <a class="footer--button__how" href="#"><i class="material-symbols-outlined">
+                  play_circle</i>Comment le faire
+               moi-même
+               ?</a>
+            <a href="resume.html" class="vtmn-link">Revenir en arrière</a>
          </div>
       </section>
       <!-- Right part : Image (only on large devices) -->
       <section id="section--image--resultat"></section>
-      <!-- Modal -->
-      <section id="section--modal">
-         <div class="modal--container">
-            <div class="modal--menu">
-               <i class="fa-solid fa-xmark fa-xl"></i>
-               <h3>Comment mesurer ?</h3>
-               <div class="modal--context">
-                  <img src="/assets/images/image-modal.svg" alt="Image d'exemple pour la modal">
-                  <div class="modale--content">
-                     <h4>Entrejambe</h4>
-                     <p><i class="fa-solid fa-ruler"></i><span class="text__underline">Matériel nécessaire :</span> un
-                        mètre-ruban, une équerre
-                        (ou objet
-                        avec angle droit), un crayon et votre tenue de cycliste.</p>
-                     <p>Mettez-vous debout, pieds nus et adossé au mur. Vos pieds sont légèrement écartes (environ 15 à
-                        20 cm max.) et vos talons touchent le mur. <br>
-                        Regardez droit devant vous, ensuite, prenez une équerre ou tout autre objet possédant un angle
-                        droit (ex: un livre) contre le mur et faites le glisser entre vos jambes jusqu’à votre périné.
-                        <br>
-                        Mesurer la distance entre l’angle droit et le sol
-                     </p>
-                  </div>
-               </div>
-               <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap"
-                  style="display: flex; flex-direction: row; align-items: center">
-                  <button class="vtmn-btn vtmn-btn_size--stretched">OK, j'ai compris</button>
-               </div>
-            </div>
-         </div>
-      </section>
    </main>
-   <!-- Fontawesome setup : https://fontawesome.com/ -->
-   <script src="https://kit.fontawesome.com/83ce2736b9.js" crossorigin="anonymous" defer></script>
    <script src="/assets/scripts/index.js" defer></script>
 </body>
 

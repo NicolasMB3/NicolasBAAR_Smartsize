@@ -1,3 +1,10 @@
+@mixin paragraph($font-size, $color, $font-weight) {
+   font-weight: $font-weight;
+   font-size: $font-size;
+   line-height: 20px;
+   color: $color;
+}
+
 @mixin navigation-circles($color, $bg) {
    // Font parameters
    font-weight: 700;
@@ -59,13 +66,6 @@
 
    span {
       margin-left: 0.5rem;
-      display: block;
-      width: 12px;
-      height: 12px;
-      background-image: url('/assets/images/arrow-white.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      transform: rotate(0deg);
    }
 
    &:hover {
@@ -89,13 +89,31 @@
 
    span {
       margin-right: 0.5rem;
-      display: block;
-      width: 12px;
-      height: 12px;
-      background-image: url('/assets/images/arrow-blue.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      transform: rotate(180deg);
+   }
+
+   &:hover {
+      background-color: $blue;
+   }
+}
+
+@mixin footer--button__how($blue, $white, $size) {
+   background-color: $blue;
+   text-align: center;
+   color: $white;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 16px;
+   text-decoration: none;
+   padding: 16px 30px;
+   border-radius: 4px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: $size;
+   margin-bottom: 0.5rem;
+
+   i {
+      margin-right: 0.5rem;
    }
 
    &:hover {
@@ -108,10 +126,11 @@
    height: $size;
    position: absolute;
    left: $positionX;
-   top: $positionY;
+   bottom: $positionY;
    border: 1px solid $circle;
    border-radius: 9999px;
    opacity: 0.3;
+   z-index: -20;
 }
 
 @mixin form-cercles__right($size, $positionX, $positionY, $circle) {
@@ -119,8 +138,9 @@
    height: $size;
    position: absolute;
    right: $positionX;
-   top: $positionY;
+   bottom: $positionY;
    border: 1px solid $circle;
    border-radius: 9999px;
    opacity: 0.3;
+   z-index: -20;
 }

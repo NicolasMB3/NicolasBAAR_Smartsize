@@ -1,30 +1,29 @@
 #form {
-  margin-top: 1.4rem;
   padding: 1.8rem 1rem;
 }
 #form h1 {
-  margin-bottom: 1rem;
-  font-style: italic;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
+  line-height: 20px;
   color: #001018;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 #form h2 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 0.3rem;
+  line-height: 20px;
   color: #1A2A34;
+  margin-bottom: 0.3rem;
 }
 #form .form--desc {
-  margin-top: 0;
-  margin-bottom: 2rem;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
   color: #687787;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 #form label {
   margin-right: 1.4rem;
@@ -52,18 +51,19 @@
   width: 100%;
 }
 .morphologie--form .morphologie--content .morphologie--content__modifier label {
-  font-style: italic;
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
+  line-height: 20px;
   color: #001018;
+  font-style: italic;
+  text-transform: uppercase;
 }
 .morphologie--form .morphologie--content .label {
   width: 100%;
 }
 .morphologie--form .morphologie--content .label label {
   visibility: hidden;
+  margin-bottom: 0;
 }
 .morphologie--form .morphologie--content a {
   position: absolute;
@@ -106,48 +106,130 @@
   padding: 0 2rem 2rem 2rem;
   align-content: flex-end;
 }
-#section--modal .modal--menu .fa-xmark {
+#section--modal .modal--menu .btnClose {
   position: absolute;
   right: 40px;
-  top: 48px;
-  color: #00689D;
+  top: 33px;
+  color: #007DBC;
   cursor: pointer;
-}
-#section--modal .modal--menu :last-child {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
 }
 #section--modal .modal--menu p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
   color: #687787;
   margin-bottom: 0.5rem;
 }
 #section--modal .modal--menu h3 {
-  width: 80%;
-  font-style: italic;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
+  line-height: 20px;
   color: #001018;
+  width: 90%;
+  font-style: italic;
+  text-transform: uppercase;
   margin-bottom: 2rem;
 }
 #section--modal .modal--menu h4 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 20px;
   color: #1A2A34;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.7rem;
 }
 #section--modal .modal--menu .modal--context {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
+#section--modal .modal--menu .modal--context .material-icons {
+  margin-right: 0.5rem;
+}
+#section--modal .modal--menu .modal--context hr {
+  border: 1px solid #EFF1F3;
+  width: 80%;
+  margin: 1.5rem auto;
+}
 #section--modal .modal--menu .modal--context img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 24px;
+  margin-bottom: 1.625rem;
+}
+
+#pratique--modal {
+  width: auto;
+  height: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+#pratique--modal .modal--menu {
+  width: auto;
+  background-color: white;
+  padding: 2rem 2rem 8rem 2rem;
+}
+#pratique--modal .modal--menu .block {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -60.25%, #FFFFFF 90.48%);
+  padding: 0 2rem 2rem 2rem;
+  align-content: flex-end;
+}
+#pratique--modal .modal--menu .btnClose {
+  position: absolute;
+  right: 40px;
+  top: 33px;
+  color: #007DBC;
+  cursor: pointer;
+}
+#pratique--modal .modal--menu p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #687787;
+  margin-bottom: 0.5rem;
+}
+#pratique--modal .modal--menu h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #001018;
+  width: 90%;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+#pratique--modal .modal--menu h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #1A2A34;
+  margin-bottom: 0.7rem;
+}
+#pratique--modal .modal--menu .modal--context {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+#pratique--modal .modal--menu .modal--context .material-icons {
+  margin-right: 0.5rem;
+}
+#pratique--modal .modal--menu .modal--context hr {
+  border: 1px solid #EFF1F3;
+  width: 80%;
+  margin: 1.5rem auto;
+}
+#pratique--modal .modal--menu .modal--context img {
   margin-left: auto;
   margin-right: auto;
   width: 300px;
@@ -160,12 +242,12 @@
   width: 100%;
 }
 .velo--container label {
-  font-style: italic;
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
+  line-height: 20px;
   color: #001018;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 .card--container {
@@ -178,12 +260,12 @@
   align-items: center;
 }
 .card--container .card--desc h4 {
-  font-style: italic;
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
+  line-height: 20px;
   color: #001018;
+  font-style: italic;
+  text-transform: uppercase;
   width: auto;
 }
 .card--container .card--desc a {
@@ -204,7 +286,7 @@
   align-items: center;
   background-color: white;
   padding: 0.5rem;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   border-radius: 4px;
   border: 1px solid #687787;
 }
@@ -220,11 +302,11 @@
   margin-bottom: 0.3rem;
 }
 .card--container .card p {
-  width: 90%;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #687787;
+  width: 90%;
 }
 .card--container .card img {
   margin-right: 1rem;
@@ -251,23 +333,61 @@
 .resume--block .resume--desc p:first-child {
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
   color: #001018;
 }
 .resume--block .resume--desc p:nth-child(2) {
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
   color: #007DBC;
+}
+
+.resultat--block {
+  margin-top: 1.5rem;
+  padding-bottom: 8rem;
+}
+.resultat--block .block {
+  margin-bottom: 1.5rem;
+}
+.resultat--block .vtmn-card {
+  border: 2px solid #007DBC;
+}
+.resultat--block .vtmn-card .vtmn-card_content .card--content_flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.resultat--block .vtmn-card .vtmn-card_content a {
+  display: flex;
+  margin-top: 0;
+}
+.resultat--block .vtmn-card .vtmn-card_content a p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #007DBC;
+}
+.resultat--block .vtmn-card .vtmn-card_content a img {
+  margin-right: 0.5rem;
+  width: 16px;
+}
+.resultat--block .vtmn-card .vtmn-card_content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #007DBC;
+  margin-top: 0;
+}
+.resultat--block .vtmn-card img {
+  aspect-ratio: 0;
 }
 
 body {
   font-family: "Roboto";
   font-style: normal;
-}
-
-.fa-solid {
-  margin-right: 0.5rem;
 }
 
 .text__underline {
@@ -280,6 +400,18 @@ body {
 
 #section--image {
   display: none;
+}
+
+.display-none {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" -25, "opsz" 48;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 200, "opsz" 48;
 }
 
 #navigation {
@@ -334,7 +466,7 @@ body {
   width: 100%;
   position: relative;
 }
-#navigation #navigation--content .navigation--box .fa-check {
+#navigation #navigation--content .navigation--box .material-symbols-outlined {
   margin-right: 0;
   display: none;
 }
@@ -353,7 +485,7 @@ body {
   width: 32px;
   height: 32px;
 }
-#navigation #navigation--content .navigation--box .navigation--box-v__circle .fa-check {
+#navigation #navigation--content .navigation--box .navigation--box-v__circle .material-symbols-outlined {
   margin-right: 0;
   display: block;
 }
@@ -377,6 +509,108 @@ body {
   height: 32px;
 }
 #navigation #navigation--content .navigation--box .navigation--box__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 1rem;
+  color: #687787;
+}
+
+#navigation-resultat {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  overflow: auto;
+  flex-direction: column;
+  text-align: center;
+}
+#navigation-resultat #logo--navigation__width {
+  width: 160px;
+  height: 40px;
+}
+#navigation-resultat #navigation--content {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2.4rem;
+  position: relative;
+}
+#navigation-resultat #navigation--content .line:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-color: #D9DDE1;
+  top: 15px;
+  left: 0;
+  transform: translateX(45%);
+  z-index: -1;
+}
+#navigation-resultat #navigation--content .line-valid:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-color: #007DBC;
+  top: 15px;
+  left: 0;
+  transform: translateX(45%);
+  z-index: -1;
+}
+#navigation-resultat #navigation--content .navigation--box {
+  width: 100%;
+  position: relative;
+}
+#navigation-resultat #navigation--content .navigation--box .material-symbols-outlined {
+  margin-right: 0;
+  display: none;
+}
+#navigation-resultat #navigation--content .navigation--box .navigation--box-v__circle {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 99px;
+  background-color: #007DBC;
+  width: 32px;
+  height: 32px;
+}
+#navigation-resultat #navigation--content .navigation--box .navigation--box-v__circle .material-symbols-outlined {
+  margin-right: 0;
+  display: block;
+}
+#navigation-resultat #navigation--content .navigation--box .navigation--box-v__circle .text__hide {
+  display: none;
+}
+#navigation-resultat #navigation--content .navigation--box .navigation--box__circle {
+  font-weight: 700;
+  font-size: 16px;
+  color: #007DBC;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 99px;
+  border: 2px solid #007DBC;
+  background-color: white;
+  width: 32px;
+  height: 32px;
+}
+#navigation-resultat #navigation--content .navigation--box .navigation--box__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -413,13 +647,6 @@ body {
 }
 #footer .footer--button__next span {
   margin-left: 0.5rem;
-  display: block;
-  width: 12px;
-  height: 12px;
-  background-image: url("/assets/images/arrow-white.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotate(0deg);
 }
 #footer .footer--button__next:hover {
   background-color: #007DBC;
@@ -427,7 +654,7 @@ body {
 
 #footer--morphologie {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
-  height: 10rem;
+  height: 8rem;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -454,13 +681,6 @@ body {
 }
 #footer--morphologie .footer--button__next span {
   margin-left: 0.5rem;
-  display: block;
-  width: 12px;
-  height: 12px;
-  background-image: url("/assets/images/arrow-white.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotate(0deg);
 }
 #footer--morphologie .footer--button__next:hover {
   background-color: #007DBC;
@@ -481,15 +701,70 @@ body {
 }
 #footer--morphologie .footer--button__prev span {
   margin-right: 0.5rem;
-  display: block;
-  width: 12px;
-  height: 12px;
-  background-image: url("/assets/images/arrow-blue.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotate(180deg);
 }
 #footer--morphologie .footer--button__prev:hover {
+  background-color: white;
+}
+
+#footer--resultat {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
+  height: 8rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2rem 2rem 2rem;
+}
+#footer--resultat a {
+  color: #687787;
+}
+#footer--resultat .material-symbols-outlined {
+  margin-right: 0.5rem;
+}
+#footer--resultat .footer--button__how {
+  background-color: #007DBC;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  padding: 16px 30px;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+#footer--resultat .footer--button__how i {
+  margin-right: 0.5rem;
+}
+#footer--resultat .footer--button__how:hover {
+  background-color: #007DBC;
+}
+#footer--resultat .footer--button__prev {
+  background-color: white;
+  color: #007DBC;
+  border: 2px solid #D9DDE1;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer--resultat .footer--button__prev span {
+  margin-right: 0.5rem;
+}
+#footer--resultat .footer--button__prev:hover {
   background-color: white;
 }
 
@@ -498,7 +773,10 @@ body {
     display: flex;
     align-content: center;
     justify-content: space-around;
-    min-height: 100vh;
+    height: 100vh;
+  }
+  .display-none {
+    display: contents;
   }
   #navigation #logo--navigation__width {
     width: 200px;
@@ -506,21 +784,23 @@ body {
   }
   #navigation #navigation--content {
     margin-top: 4rem;
+    margin-bottom: 1rem;
   }
   #section--form {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 2rem 8rem;
+    padding: 2rem 4rem;
   }
   #section--form #form {
     height: 60vh;
-    padding: 3rem 2rem;
+    padding: 1rem 2rem 3rem 2rem;
+    overflow-y: auto;
   }
   #section--form #form h1 {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1rem;
   }
   #section--form #form h2 {
     font-size: 20px;
@@ -530,57 +810,96 @@ body {
     height: 40rem;
     position: absolute;
     left: -36rem;
-    top: 25rem;
+    bottom: -10rem;
     border: 1px solid #7EBEE0;
     border-radius: 9999px;
     opacity: 0.3;
+    z-index: -20;
   }
   #section--form #form--circles__2 {
     width: 40rem;
     height: 40rem;
     position: absolute;
     left: -32rem;
-    top: 35rem;
+    bottom: -20rem;
     border: 1px solid #7EBEE0;
     border-radius: 9999px;
     opacity: 0.3;
+    z-index: -20;
   }
   #section--form #form--circles__3 {
     width: 40rem;
     height: 40rem;
     position: absolute;
     right: -30rem;
-    top: 32rem;
+    bottom: -10rem;
     border: 1px solid #7EBEE0;
     border-radius: 9999px;
     opacity: 0.3;
+    z-index: -20;
   }
   #section--form #form--circles__4 {
     width: 40rem;
     height: 40rem;
     position: absolute;
     right: -30rem;
-    top: 40rem;
+    bottom: -20rem;
     border: 1px solid #7EBEE0;
     border-radius: 9999px;
     opacity: 0.3;
+    z-index: -20;
   }
   .morphologie--form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
+    padding-bottom: 0;
   }
   #footer {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, rgba(255, 255, 255, 0) 66.48%);
     width: 100%;
-    height: auto;
-    position: relative;
+    height: 8rem;
+    position: absolute;
+    padding: 0 6rem 2rem 6rem;
   }
   #footer--morphologie {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
+    width: 100%;
+    height: 8rem;
+    position: absolute;
+    padding: 0 6rem 2rem 6rem;
+  }
+  #footer--resultat {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, rgba(255, 255, 255, 0) 66.48%);
     width: 100%;
-    height: auto;
+    height: 8rem;
     position: relative;
+  }
+  #footer--resultat a {
+    color: white;
+  }
+  #footer--resultat .footer--button__how {
+    background-color: white;
+    text-align: center;
+    color: #001018;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 21rem;
+    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  #footer--resultat .footer--button__how i {
+    margin-right: 0.5rem;
+  }
+  #footer--resultat .footer--button__how:hover {
+    background-color: white;
   }
   #section--image {
     display: block;
@@ -657,11 +976,48 @@ body {
     position: relative;
     padding: 0;
   }
+  #pratique--modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 26, 26, 0.5);
+  }
+  #pratique--modal .modal--menu {
+    width: 45rem;
+    padding: 2rem;
+    border-radius: 12px;
+    position: relative;
+  }
+  #pratique--modal .modal--menu .modal--context {
+    flex-direction: column;
+  }
+  #pratique--modal .modal--menu .modal--context #first-content,
+#pratique--modal .modal--menu .modal--context #second-content {
+    display: flex;
+  }
+  #pratique--modal .modal--menu .modal--context img {
+    margin-right: 1.625rem;
+    margin-bottom: 0;
+  }
+  #pratique--modal .modal--menu p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #687787;
+  }
+  #pratique--modal .modal--menu h4 {
+    margin-top: 1rem;
+  }
+  #pratique--modal .modal--menu .block {
+    height: auto;
+    position: relative;
+    padding: 0;
+  }
   .velo--container .vtmn-select_container {
     width: 30%;
   }
   .card--container {
     width: 28rem;
+    margin-bottom: 0.5rem;
   }
   .resume--block {
     display: flex;
@@ -669,6 +1025,7 @@ body {
     align-items: center;
     align-content: center;
     column-gap: 2rem;
+    margin-bottom: 0.5rem;
   }
   .resume--block .resume--desc {
     padding: 1.5rem 0;
@@ -680,4 +1037,32 @@ body {
 .resume--block #second--section {
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+  .resultat--block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    overflow-x: hidden;
+    padding-bottom: 0;
+  }
+  .resultat--block .vtmn-card_image img {
+    width: 200px;
+    height: 125px;
+  }
+  .resultat--block .block {
+    width: 16rem;
+    height: 15rem;
+  }
+  .resultat--block .block .vtmn-card {
+    width: 400px;
+  }
+  #navigation-resultat #logo--navigation__width {
+    width: 200px;
+    height: 50px;
+  }
+  #navigation-resultat #navigation--content {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    width: 60%;
+  }
+}

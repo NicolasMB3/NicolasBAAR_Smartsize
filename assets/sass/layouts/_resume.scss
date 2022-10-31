@@ -20,17 +20,11 @@
       padding: 1rem 0;
 
       p:first-child {
-         font-weight: 700;
-         font-size: 16px;
-         line-height: 24px;
-         color: $dark;
+         @include paragraph(16px, $dark, 700);
       }
 
       p:nth-child(2) {
-         font-weight: 700;
-         font-size: 16px;
-         line-height: 24px;
-         color: $blue;
+         @include paragraph(16px, $blue, 700);
       }
    }
 }

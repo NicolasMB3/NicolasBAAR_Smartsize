@@ -2,34 +2,24 @@
 
 // Form settings (input, radio..)
 #form {
-   margin-top: 1.4rem;
    padding: 1.8rem 1rem;
 
    h1 {
-      margin-bottom: 1rem;
+      @include paragraph(24px, $dark, 700);
       font-style: italic;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
       text-transform: uppercase;
-      color: $dark;
+      margin-bottom: 1rem;
    }
 
    h2 {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 28px;
+      @include paragraph(18px, $dark-grey, 700);
       margin-bottom: .3rem;
-      color: $dark-grey;
    }
 
    .form--desc {
+      @include paragraph(16px, $grey, 400);
       margin-top: 0;
       margin-bottom: 2rem;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      color: $grey;
    }
 
    label {

@@ -3,6 +3,7 @@
 @use 'layouts/morphologie';
 @use 'layouts/pratique';
 @use 'layouts/resume';
+@use 'layouts/resultat';
 @use 'layouts/navigation';
 @use 'layouts/footer';
 
@@ -14,7 +15,11 @@
       display: flex;
       align-content: center;
       justify-content: space-around;
-      min-height: 100vh;
+      height: 100vh;
+   }
+
+   .display-none {
+      display: contents
    }
 
    #navigation {
@@ -25,23 +30,25 @@
 
       #navigation--content {
          margin-top: 4rem;
+         margin-bottom: 1rem;
       }
    }
 
    #section--form {
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       position: relative;
       overflow-x: hidden;
       overflow-y: hidden;
-      padding: 2rem 8rem;
+      padding: 2rem 4rem;
 
       #form {
          height: 60vh;
-         padding: 3rem 2rem;
+         padding: 1rem 2rem 3rem 2rem;
+         overflow-y: auto;
 
          h1 {
-            margin-bottom: 1.8rem;
+            margin-bottom: 1rem;
          }
 
          h2 {
@@ -50,19 +57,19 @@
       }
 
       #form--circles__1 {
-         @include form-cercles__left(40rem, -36rem, 25rem, $circles)
+         @include form-cercles__left(40rem, -36rem, -10rem, $circles)
       }
 
       #form--circles__2 {
-         @include form-cercles__left(40rem, -32rem, 35rem, $circles)
+         @include form-cercles__left(40rem, -32rem, -20rem, $circles)
       }
 
       #form--circles__3 {
-         @include form-cercles__right(40rem, -30rem, 32rem, $circles)
+         @include form-cercles__right(40rem, -30rem, -10rem, $circles)
       }
 
       #form--circles__4 {
-         @include form-cercles__right(40rem, -30rem, 40rem, $circles)
+         @include form-cercles__right(40rem, -30rem, -20rem, $circles)
       }
    }
 
@@ -70,20 +77,39 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 2rem;
+      padding-bottom: 0;
    }
 
    #footer {
       background: linear-gradient(180deg, #ffffff00 -2.25%, #ffffff00 66.48%);
       width: 100%;
-      height: auto;
-      position: relative;
+      height: 8rem;
+      position: absolute;
+      padding: 0 6rem 2rem 6rem;
    }
 
    #footer--morphologie {
-      background: linear-gradient(180deg, #ffffff00 -2.25%, #ffffff00 66.48%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
       width: 100%;
-      height: auto;
+      height: 8rem;
+      position: absolute;
+      padding: 0 6rem 2rem 6rem;
+   }
+
+   #footer--resultat {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #ffffff00 66.48%);
+      width: 100%;
+      height: 8rem;
       position: relative;
+
+      a {
+         color: $white
+      }
+
+      .footer--button__how {
+         @include footer--button__how($white, $dark, 21rem);
+         margin-bottom: 0.75rem;
+      }
    }
 
    // Home page : Index
@@ -176,6 +202,47 @@
       }
    }
 
+   #pratique--modal {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(26, 26, 26, 0.5);
+
+      .modal--menu {
+         width: 45rem;
+         padding: 2rem;
+         border-radius: 12px;
+         position: relative;
+
+         .modal--context {
+            flex-direction: column;
+
+            #first-content,
+            #second-content {
+               display: flex;
+            }
+
+            img {
+               margin-right: 1.625rem;
+               margin-bottom: 0
+            }
+         }
+
+         p {
+            @include paragraph(16px, $grey, 400);
+         }
+
+         h4 {
+            margin-top: 1rem;
+         }
+
+         .block {
+            height: auto;
+            position: relative;
+            padding: 0;
+         }
+      }
+   }
+
    .velo--container {
       .vtmn-select_container {
          width: 30%;
@@ -184,6 +251,7 @@
 
    .card--container {
       width: 28rem;
+      margin-bottom: .5rem;
    }
 
    .resume--block {
@@ -192,6 +260,7 @@
       align-items: center;
       align-content: center;
       column-gap: 2rem;
+      margin-bottom: .5rem;
 
       .resume--desc {
          padding: 1.5rem 0;
@@ -204,6 +273,45 @@
       #first--section,
       #second--section {
          width: 100%;
+      }
+   }
+
+   .resultat--block {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      overflow-x: hidden;
+      padding-bottom: 0;
+
+      .vtmn-card_image {
+         img {
+            width: 200px;
+            height: 125px;
+         }
+      }
+
+      .block {
+         width: 16rem;
+         height: 15rem;
+      }
+
+      .block .vtmn-card {
+         width: 400px;
+      }
+   }
+
+   #navigation-resultat {
+
+      #logo--navigation__width {
+         width: 200px;
+         height: 50px;
+      }
+
+      #navigation--content {
+         margin-top: 2.5rem;
+         margin-bottom: 2rem;
+         width: 60%;
       }
    }
 }

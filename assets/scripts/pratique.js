@@ -1,10 +1,10 @@
 // Display modal for "entrejambe" section
-const buttonEntrejambe = document.getElementById('modalEntrejambe');
-const modal = document.getElementById('section--modal');
+const informationBtn = document.getElementById('more-information--btn');
+const modal = document.getElementById('pratique--modal');
 const closeModalBtn = document.getElementsByClassName('btnClose');
 
-if (!buttonEntrejambe == false) {
-   buttonEntrejambe.addEventListener('click', () => {
+if (!informationBtn == false) {
+   informationBtn.addEventListener('click', () => {
       modal.style.display = 'flex';
    });
 }
