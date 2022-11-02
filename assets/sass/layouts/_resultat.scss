@@ -23,15 +23,17 @@
 
          a {
             display: flex;
+            align-items: center;
             margin-top: 0;
+            @include paragraph(14px, $blue, 700);
 
             p {
-               @include paragraph(14px, $blue, 400)
+               @include paragraph(14px, $blue, 700)
             }
 
-            img {
-               margin-right: 0.5rem;
-               width: 16px;
+            .material-symbols-outlined {
+               margin-right: 0.2rem;
+               font-size: 18px;
             }
          }
 
@@ -42,6 +44,8 @@
       }
 
       img {
+         margin-left: auto;
+         margin-right: auto;
          aspect-ratio: 0;
       }
    }

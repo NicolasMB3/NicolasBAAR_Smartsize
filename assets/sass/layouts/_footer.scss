@@ -1,5 +1,10 @@
 @use '../utils' as *;
 
+// Only display icon on small device (Fold)
+.hide-small {
+   display: none;
+}
+
 #footer {
    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -2.25%, #FFFFFF 66.48%);
    height: 10rem;
@@ -53,7 +58,7 @@
    justify-content: flex-end;
    align-items: center;
    flex-direction: column;
-   padding: 0 2rem 2rem 2rem;
+   padding: 0 2.8rem 2rem 2.8rem;
 
    a {
       color: $grey;

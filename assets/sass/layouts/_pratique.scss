@@ -30,9 +30,13 @@
 
       a {
          display: flex;
+         align-items: center;
+         margin-top: 0;
+         @include paragraph(14px, $blue, 700);
 
-         img {
-            margin-right: 0.3rem;
+         .material-symbols-outlined {
+            margin-right: 0.2rem;
+            font-size: 18px;
          }
 
          p {
