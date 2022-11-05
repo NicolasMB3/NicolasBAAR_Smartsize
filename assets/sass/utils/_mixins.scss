@@ -5,6 +5,13 @@
    color: $color;
 }
 
+@mixin title($font-size, $color, $font-weight, $line) {
+   font-weight: $font-weight;
+   font-size: $font-size;
+   line-height: $line;
+   color: $color;
+}
+
 @mixin navigation-circles($color, $bg) {
    // Font parameters
    cursor: not-allowed;

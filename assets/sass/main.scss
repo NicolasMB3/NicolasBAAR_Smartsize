@@ -29,6 +29,10 @@
       display: contents
    }
 
+   .text-center {
+      text-align: center;
+   }
+
    #navigation {
       #logo--navigation__width {
          width: 200px;
@@ -126,7 +130,7 @@
       height: auto;
       z-index: 5;
       background-image: url("../images/image.svg");
-      background-position: top;
+      background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
    }
@@ -138,7 +142,7 @@
       height: auto;
       z-index: 5;
       background-image: url("../images/morphologie.svg");
-      background-position: top;
+      background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
    }
@@ -150,7 +154,7 @@
       height: auto;
       z-index: 5;
       background-image: url("../images/pratique.svg");
-      background-position: top;
+      background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
    }
@@ -162,7 +166,7 @@
       height: auto;
       z-index: 5;
       background-image: url("../images/resume.svg");
-      background-position: top;
+      background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
    }
@@ -258,6 +262,12 @@
 
    .card--container {
       margin-bottom: 1.5rem;
+      .card {
+   
+         p {
+            width: 100%;
+         }
+      }
    }
 
    .resume--block {
